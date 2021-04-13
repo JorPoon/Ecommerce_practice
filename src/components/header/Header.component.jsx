@@ -6,7 +6,7 @@ import { ReactComponent as Logo } from "../../assets/crown.svg"
 import CartDropDown from "../cart-dropdown/Cart-dropdown.component.jsx";
 import CartIcon from "../cart-icon/Cart-icon.component"
 import "./Header.styles.scss"
-import CartDropDrown from "../cart-dropdown/Cart-dropdown.component.jsx"
+
 
 
 const Header = ({currentUser, hidden}) => (
@@ -34,7 +34,7 @@ const Header = ({currentUser, hidden}) => (
             }
             <CartIcon/>
         </div>
-        { hidden ? null:<CartDropDrown/> }
+        { hidden ? null:<CartDropDown/> }
     </div>
 )
 
